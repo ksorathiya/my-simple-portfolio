@@ -16,6 +16,7 @@ interface BlurFadeTextProps {
   delay?: number;
   yOffset?: number;
   animateByCharacter?: boolean;
+  wavingHand?: boolean;
 }
 const BlurFadeText = ({
   text,
@@ -25,6 +26,7 @@ const BlurFadeText = ({
   delay = 0,
   yOffset = 8,
   animateByCharacter = false,
+  wavingHand = false,
 }: BlurFadeTextProps) => {
   const defaultVariants: Variants = {
     hidden: { y: yOffset, opacity: 0, filter: "blur(8px)" },
@@ -75,7 +77,7 @@ const BlurFadeText = ({
           }}
           className={cn("inline-block", className)}
         >
-          {text}
+          {text} {wavingHand ? <span className="wave">👋</span> : ""}
         </motion.span>
       </AnimatePresence>
     </div>
