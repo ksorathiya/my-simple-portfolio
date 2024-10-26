@@ -4,6 +4,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
+import { Timeline } from "@/components/ui/timeline";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import PulsatingButton from "@/components/magicui/pulsating-button";
 import { Button } from "@/components/ui/button";
@@ -249,6 +250,55 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
+      <section id="timeline" className="max-w-4xl m-auto">
+        <div className="center inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm mb-10">
+          STORY SO FAR
+        </div>
+
+        <ol className="relative border-s border-gray-200 dark:border-gray-700">
+          {DATA.timeline.map((entry, index) => {
+            return (
+              <li className="mb-10 ms-4">
+                <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                  {entry.timestamp}
+                </time>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                  <Markdown>{entry.title}</Markdown>
+                </h3>
+                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                  <Markdown>{entry.description}</Markdown>
+                </p>
+                {entry.link ? (
+                  <a
+                    href={entry.link}
+                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                  >
+                    Learn more{" "}
+                    <svg
+                      className="w-3 h-3 ms-2 rtl:rotate-180"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </a>
+                ) : (
+                  ""
+                )}
+              </li>
+            );
+          })}
+        </ol>
+      </section>
       <section id="rocket">
         <Lottie
           animationData={rocket}
@@ -261,7 +311,10 @@ export default function Page() {
           <div className="w-full py-12 mx-auto max-w-7xl lg:py-12 space-y-32">
             {DATA.skillsections.map((section, index) => {
               return (
-                <div className="list-none grid grid-cols-1 lg:grid-cols-2 gap-2 justify-center items-center lg:gap-8">
+                <div
+                  key={index}
+                  className="list-none grid grid-cols-1 lg:grid-cols-2 gap-2 justify-center items-center lg:gap-8"
+                >
                   <div>
                     <div>
                       <span className="bg-yellow border border-white/50 backdrop-blur-2xl rounded-full py-2 w-auto">

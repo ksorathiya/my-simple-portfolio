@@ -1127,4 +1127,73 @@ export const DATA = {
       image: "/assets/transformation-image.png",
     },
   ],
+  timeline: [
+    {
+      timestamp: "January 2023",
+      title: "Got my PMP certification",
+      description: "",
+      link: "",
+      tags: [],
+    },
+    {
+      timestamp: "2021 - 2022",
+      title:
+        "Project Management in IT - Certification Course from Seneca Polytechnic, Toronto.",
+      description: "",
+      link: "",
+      tags: [],
+    },
+    {
+      timestamp: "September 2021",
+      title: "AWS Certified Solutions Architect Certification",
+      description: "",
+      link: "",
+      tags: [],
+    },
+    {
+      timestamp: "April 2021",
+      title: "Moved to Toronto, Canada",
+      description: "",
+      link: "",
+      tags: [],
+    },
+    {
+      timestamp: "Oct 2016",
+      title: "Joined Solvative, back then it was called Quark Studios",
+      description: "",
+      link: "",
+      tags: [],
+    },
+    {
+      timestamp: "2016",
+      title: "Graduated Bachelor's of Engineering - Information Technology",
+      description: "",
+      link: "",
+      tags: [],
+    },
+    {
+      timestamp: "July 2016 - September 2016",
+      title:
+        "Practical Project Development Guide at L.D. College of Engineering",
+      description: "",
+      link: "",
+      tags: [],
+    },
+    {
+      timestamp: "June 2015 - April 2016",
+      title: "PHP Developer Intern at Nyusoft Solutions",
+      description: "",
+      link: "",
+      tags: [],
+    },
+    { timestamp: "2012", title: "Passed HSC", description: "", link: "" },
+    { timestamp: "2010", title: "Passed SSC", description: "", link: "" },
+    {
+      timestamp: "1994",
+      title: "This is when I was born",
+      description: "",
+      link: "",
+      tags: [],
+    },
+  ],
 } as const;
