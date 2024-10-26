@@ -40,24 +40,30 @@ export default function Page() {
               <BlurFade delay={BLUR_FADE_DELAY * 4}>
                 <Markdown
                   rehypePlugins={[rehypeRaw]}
-                  className="pt-4 py-8 prose-stone text-pretty font-sans text-xl dark:prose-invert max-w-[600px] md:text-xl"
+                  className="my-4 prose-stone text-pretty font-sans text-xl dark:prose-invert max-w-[600px] md:text-xl"
                 >
                   {DATA.designation}
                 </Markdown>
-                <div className="flex gap-4">
+                <div className="flex gap-4 my-16">
                   <Link target="_blank" href="https://cal.com/kartik-sorathiya">
-                    <PulsatingButton>{"Get in touch"}</PulsatingButton>
+                    <PulsatingButton>{"Get in Touch"}</PulsatingButton>
                   </Link>
                   <Link
                     target="_blank"
                     href="https://docs.google.com/document/d/1T7Xl2qQHVSGoRYwqaGK23bnGhYISsMAO/edit?usp=sharing&ouid=113641347303871215868&rtpof=true&sd=true"
                   >
                     <Button variant="link">
-                      Get my resume{" "}
+                      Get my Resume{" "}
                       <ChevronRightIcon className="ml-1 size-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </Button>
                   </Link>
                 </div>
+                <Markdown
+                  rehypePlugins={[rehypeRaw]}
+                  className="self-baseline my-16 prose-stone text-pretty font-sans text-xl dark:prose-invert max-w-[600px] md:text-xl"
+                >
+                  {DATA.location}
+                </Markdown>
               </BlurFade>
             </div>
 

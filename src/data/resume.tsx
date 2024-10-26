@@ -5,7 +5,7 @@ export const DATA = {
   name: "Kartik Sorathiya",
   initials: "KS",
   url: "https://kartiksorathiya.com",
-  location: "Toronto, Canada",
+  location: "📍 Toronto, Canada 🇨🇦.",
   locationLink: "https://www.google.com/maps/place/toronto",
   description:
     "I understand your wants, build your needs, and deliver your requirements.😊",
