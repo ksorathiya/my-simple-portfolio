@@ -258,7 +258,7 @@ export default function Page() {
         <ol className="relative border-s border-gray-200 dark:border-gray-700">
           {DATA.timeline.map((entry, index) => {
             return (
-              <li className="mb-10 ms-4">
+              <li key={index} className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                   {entry.timestamp}
@@ -360,9 +360,12 @@ export default function Page() {
                   >
                     <div className="">
                       <div className="grid grid-cols-4 gap-2 place-content-center ">
-                        {section.logos.map((logo) => {
+                        {section.logos.map((logo, index) => {
                           return (
-                            <div className="col-span-1 p-4 flex justify-center items-center sticker">
+                            <div
+                              key={index}
+                              className="col-span-1 p-4 flex justify-center items-center sticker"
+                            >
                               <img className="" src={logo.src} alt={logo.alt} />
                             </div>
                           );
