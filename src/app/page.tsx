@@ -17,7 +17,7 @@ import Markdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import Image from "next/image";
 import Lottie from "lottie-react";
-import rocket from "/public/lotties/rocket.json";
+import rocket from "@/data/lotties/rocket.json";
 
 const BLUR_FADE_DELAY = 0.04;
 
