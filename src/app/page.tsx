@@ -1,3 +1,4 @@
+"use client";
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
@@ -14,6 +15,8 @@ import Link from "next/link";
 import Markdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import Image from "next/image";
+import Lottie from "lottie-react";
+import rocket from "/public/lotties/rocket.json";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -21,7 +24,7 @@ export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
-        <div className="mx-auto w-full max-w-4xl space-y-8">
+        <div className="mx-auto w-full space-y-8">
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1 self-center space-y-1.5">
               <BlurFadeText
@@ -70,7 +73,7 @@ export default function Page() {
         </div>
       </section>
       <section id="description">
-        <div className="z-10 flex min-h-64 items-center justify-center bg-white dark:bg-black">
+        <div className="z-10 flex min-h-[100dvh] items-center justify-center bg-white dark:bg-black">
           <TextReveal text={DATA.description} />
         </div>
       </section>
@@ -246,9 +249,83 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
+      <section id="rocket">
+        <Lottie
+          animationData={rocket}
+          className="flex justify-center items-center"
+          loop={true}
+        />
+      </section>
+      <section id="skills-and-stickers">
+        <section className="relative">
+          <div className="w-full py-12 mx-auto max-w-7xl lg:py-12 space-y-32">
+            {DATA.skillsections.map((section, index) => {
+              return (
+                <div className="list-none grid grid-cols-1 lg:grid-cols-2 gap-2 justify-center items-center lg:gap-8">
+                  <div>
+                    <div>
+                      <span className="bg-yellow border border-white/50 backdrop-blur-2xl rounded-full py-2 w-auto">
+                        <span className="center inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                          {section.title}
+                        </span>
+                      </span>
+                      <p className="text-4xl mt-8 lg:text-6xl font-extrabold tracking-tight text-black">
+                        {section.heading}
+                      </p>
+                    </div>
+                    <p className="text-lg text-slate-700 max-w-xl mt-8 lg:mx-auto">
+                      {section.description}
+                    </p>
+                    {/* <div className="flex-col flex gap-3 mt-10 sm:flex-row">
+                      {section.ctaButtons?.map((button) => {
+                        return (
+                          <a
+                            className="items-center text-white focus:outline-none inline-flex justify-center hover:text-accent-500 duration-200 focus-visible:outline-black focus-visible:ring-black font-medium lg:w-auto px-6 py-3 rounded-xl text-center w-full bg-accent-500 hover:bg-accent-100"
+                            href="/"
+                          >
+                            <img src={button.icon} className="h-6 w-6" />
+                            <span className="ml-4 flex items-start flex-col leading-none">
+                              <span className="text-xs mb-1">
+                                {button.head}
+                              </span>
+                              <span className="title-font font-medium">
+                                {button.text}
+                              </span>
+                            </span>
+                          </a>
+                        );
+                      })}
+                    </div> */}
+                  </div>
+                  <div
+                    className={
+                      "h-full lg:mt-0 mt-12 p-4 pb-0 rounded-3xl overflow-hidden " +
+                      (index % 2 === 0
+                        ? " flex  h-full lg:mt-0 mt-12 p-4 pb-0 rounded-3xl justify-center items-center overflow-hidden lg:order-first"
+                        : " flex h-full lg:mt-0 mt-12 p-4 pb-0 rounded-3xl  overflow-hidden")
+                    }
+                  >
+                    <div className="">
+                      <div className="grid grid-cols-4 gap-2 place-content-center ">
+                        {section.logos.map((logo) => {
+                          return (
+                            <div className="col-span-1 p-4 flex justify-center items-center sticker">
+                              <img className="" src={logo.src} alt={logo.alt} />
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      </section>
       <section id="skills">
         <div className="center inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-          Skillset and Toolset
+          and more ...
         </div>
       </section>
       {Object.keys(DATA.skills).map((category, id) => (
@@ -272,6 +349,8 @@ export default function Page() {
           </div>
         </section>
       ))}
+
+      <section id="macbook-image"></section>
       <img alt="" width="100%" height="100%" src="/laptop.png" />
     </main>
   );

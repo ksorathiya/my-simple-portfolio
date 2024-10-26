@@ -714,4 +714,417 @@ export const DATA = {
       ],
     },
   ],
+  skillsections: [
+    {
+      title: "Web Development",
+      heading: "Modern and Headless CMS",
+      description:
+        "Transforming digital landscapes with CMS web solutions tailored to your unique business objectives. Whether you're a global corporation or an individual thought leader, our precision-engineered designs guarantee a premium online experience, positioning you ahead of the curve in today's digital era.",
+      ctaButtons: [
+        {
+          head: "EXPLORE",
+          text: "Our Web Projects",
+          icon: "/assets/ecommerce/salesforce-commerce-cloud/features/feature4.svg",
+        },
+      ],
+      logos: [
+        {
+          src: "/logos/html5.svg",
+          alt: "HTML 5",
+        },
+        {
+          src: "/logos/css3.svg",
+          alt: "CSS 3",
+        },
+        {
+          src: "/logos/bootstrap.svg",
+          alt: "Bootstrap",
+        },
+        {
+          src: "/logos/sass.svg",
+          alt: "Sass",
+        },
+        {
+          src: "https://www.svgrepo.com/show/374118/tailwind.svg",
+          alt: "Tailwind",
+        },
+        {
+          src: "/logos/javascript.svg",
+          alt: "JavaScript",
+        },
+        {
+          src: "/logos/reactjs.svg",
+          alt: "ReactJS",
+        },
+        {
+          src: "/logos/nodejs-icon-svgrepo-com.svg",
+          alt: "Node.js",
+        },
+        {
+          src: "/logos/angular.svg",
+          alt: "Angular",
+        },
+        {
+          src: "/logos/nextjs.svg",
+          alt: "NextJS",
+        },
+        {
+          src: "https://www.svgrepo.com/show/355032/gatsbyjs.svg",
+          alt: "GatsbyJS",
+        },
+        {
+          src: "/logos/vuejs.svg",
+          alt: "Vue.js",
+        },
+        {
+          src: "/logos/php.svg",
+          alt: "PHP",
+        },
+        {
+          src: "/logos/wordpress.svg",
+          alt: "Wordpress",
+        },
+        {
+          src: "/logos/python.svg",
+          alt: "Python",
+        },
+        {
+          src: "https://www.svgrepo.com/show/303670/firebase-1-logo.svg",
+          alt: "Firebase",
+        },
+        {
+          src: "/logos/mongodb-svgrepo-com.svg",
+          alt: "MongoDB",
+        },
+        {
+          src: "https://www.svgrepo.com/show/439233/mysql.svg",
+          alt: "MySQL",
+        },
+        {
+          src: "/logos/postgres.svg",
+          alt: "Postgres",
+        },
+        {
+          src: "https://www.svgrepo.com/show/354272/redis.svg",
+          alt: "Redis",
+        },
+      ],
+      image: "/assets/web-dev-image.png",
+    },
+    {
+      title: "Modern Commerce",
+      heading: "E-Commerce.",
+      description:
+        "Empowering businesses with user-centric e-commerce platforms. Seamlessly guiding customers from product discovery to secure checkout.",
+      ctaButtons: [
+        {
+          head: "DISCOVER",
+          text: "E-comm Solutions",
+          icon: "/assets/ecommerce/salesforce-commerce-cloud/features/feature4.svg",
+        },
+      ],
+      logos: [
+        {
+          src: "https://www.svgrepo.com/show/354306/salesforce.svg",
+          alt: "Salesforce Commerce Cloud",
+        },
+        {
+          src: "https://www.svgrepo.com/show/330049/bigcommerce.svg",
+          alt: "Big Commerce Cloud",
+        },
+        {
+          src: "https://www.svgrepo.com/show/331585/squarespace.svg",
+          alt: "Squarespace Commerce",
+        },
+        {
+          src: "https://www.svgrepo.com/show/331649/wix.svg",
+          alt: "Wix",
+        },
+        {
+          src: "https://www.svgrepo.com/show/354569/woocommerce-icon.svg",
+          alt: "WooCommerce",
+        },
+        {
+          src: "https://www.svgrepo.com/show/331472/magento.svg",
+          alt: "Magento",
+        },
+        {
+          src: "https://www.svgrepo.com/show/354341/shopify.svg",
+          alt: "Shopify",
+        },
+        {
+          src: "https://www.svgrepo.com/show/452142/adobe.svg",
+          alt: "Adobe Commerce",
+        },
+        {
+          src: "https://www.svgrepo.com/show/303275/apple-pay-payment-mark-logo.svg",
+          alt: "Apple Pay",
+        },
+        {
+          src: "https://www.svgrepo.com/show/452222/google-pay.svg",
+          alt: "Google Pay",
+        },
+        {
+          src: "https://www.svgrepo.com/show/508697/klarna.svg",
+          alt: "Klarna Pay",
+        },
+      ],
+      image: "/assets/e-comm-image.png",
+    },
+    {
+      title: "Mobile",
+      heading: "Mobile Applications",
+      description:
+        "Creating intuitive mobile applications for both iOS and Android. Prioritizing performance, user engagement, and unparalleled functionality.",
+      ctaButtons: [
+        {
+          head: "BROWSE",
+          text: "Mobile Portfolio",
+          icon: "/assets/ecommerce/salesforce-commerce-cloud/features/feature4.svg",
+        },
+      ],
+      logos: [
+        {
+          src: "https://www.svgrepo.com/show/473666/ios.svg",
+          alt: "iOS",
+        },
+        {
+          src: "/logos/android.svg",
+          alt: "Android",
+        },
+
+        {
+          src: "/logos/swift.svg",
+          alt: "Swift",
+        },
+        {
+          src: "https://www.svgrepo.com/show/374035/reactts.svg",
+          alt: "React Native",
+        },
+        {
+          src: "https://www.svgrepo.com/show/353751/flutter.svg",
+          alt: "Flutter",
+        },
+        {
+          src: "https://miro.medium.com/v2/resize:fit:1400/1*DBa98egQ1DIRJqRKVAy3QA.png",
+          alt: "Progressive Web Apps",
+        },
+        {
+          src: "https://www.svgrepo.com/show/353913/ionic.svg",
+          alt: "Ionic",
+        },
+      ],
+      image: "/assets/mobile-image.png",
+    },
+    {
+      title: "Industry 4.0",
+      heading: "Industrial IoT",
+      description:
+        "Harnessing the power of Industrial Internet of Things (IIoT) to bridge the gap between machines and analytics. Turning data into actionable insights.",
+      ctaButtons: [
+        {
+          head: "LEARN",
+          text: "IIoT Solutions",
+          icon: "/assets/ecommerce/salesforce-commerce-cloud/features/feature4.svg",
+        },
+      ],
+      logos: [
+        {
+          src: "https://seeklogo.com/images/M/modbus-logo-13CDBD8DF9-seeklogo.com.png",
+          alt: "Modbus",
+        },
+        {
+          src: "https://www.svgrepo.com/show/452168/bluetooth.svg",
+          alt: "WiFi",
+        },
+        {
+          src: "https://aptinex.com/wp-content/uploads/2017/09/iot-lora-alliance-logo.svg.png",
+          alt: "LoRAWAN",
+        },
+        {
+          src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Yocto_Project_logo.svg/2560px-Yocto_Project_logo.svg.png",
+          alt: "Yocto",
+        },
+
+        {
+          src: "https://www.svgrepo.com/show/353467/azure-icon.svg",
+          alt: "Azure IoT Edge",
+        },
+        {
+          src: "https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/d778954b-6cd4-4c7e-9010-5b86b708bbb0.png",
+          alt: "AWS IoT",
+        },
+        {
+          src: "/logos/google-cloud-iot.svg",
+          alt: "Google Cloud IoT Core",
+        },
+        {
+          src: "https://www.svgrepo.com/show/353471/balena.svg",
+          alt: "Balena",
+        },
+      ],
+      image: "/assets/iiot-image.png",
+    },
+    {
+      title: "Cloud Platforms",
+      heading: "Cloud Infrastructure",
+      description:
+        "Implementing robust cloud infrastructures that promote scalability, reliability, and top-notch system administration. Modern solutions for modern businesses.",
+      ctaButtons: [
+        {
+          head: "DIVE IN",
+          text: "Cloud Services",
+          icon: "/assets/ecommerce/salesforce-commerce-cloud/features/feature4.svg",
+        },
+      ],
+      logos: [
+        {
+          src: "https://www.svgrepo.com/show/448236/linux.svg",
+          alt: "Linux",
+        },
+        {
+          src: "/logos/aws.svg",
+          alt: "AWS",
+        },
+
+        {
+          src: "/logos/azure.svg",
+          alt: "Azure",
+        },
+        {
+          src: "/logos/googlecloud.svg",
+          alt: "Google Cloud",
+        },
+        {
+          src: "https://www.svgrepo.com/show/353564/cloudflare.svg",
+          alt: "Cloudflare",
+        },
+        {
+          src: "https://www.svgrepo.com/show/373625/gitlab.svg",
+          alt: "Gitlab CI",
+        },
+        {
+          src: "https://www.svgrepo.com/show/448237/linode.svg",
+          alt: "Linode",
+        },
+        {
+          src: "https://www.svgrepo.com/show/448218/digital-ocean.svg",
+          alt: "Digital Ocean",
+        },
+        {
+          src: "https://www.svgrepo.com/show/305708/ansible.svg",
+          alt: "Ansible",
+        },
+        {
+          src: "https://www.svgrepo.com/show/452192/docker.svg",
+          alt: "Docker",
+        },
+        {
+          src: "https://www.svgrepo.com/show/448233/kubernetes.svg",
+          alt: "Kubernetes",
+        },
+        {
+          src: "https://www.svgrepo.com/show/354447/terraform-icon.svg",
+          alt: "Terraform",
+        },
+      ],
+      image: "/assets/cloud-image.png",
+    },
+    {
+      title: "Enterprise UX",
+      heading: "User Experience and User Interface",
+      description:
+        "Innovative marketing, branding, and UI/UX designs that encapsulate your brand's essence. Captivating visuals with user-centered design principles.",
+      ctaButtons: [
+        {
+          head: "VIEW",
+          text: "Design Showcase",
+          icon: "/assets/ecommerce/salesforce-commerce-cloud/features/feature4.svg",
+        },
+      ],
+      logos: [
+        {
+          src: "https://www.svgrepo.com/show/452151/adobe-xd.svg",
+          alt: "Adobe XD",
+        },
+        {
+          src: "/logos/sketch.svg",
+          alt: "Sketch",
+        },
+        {
+          src: "/logos/figma.svg",
+          alt: "Figma",
+        },
+        {
+          src: "https://www.svgrepo.com/show/452148/adobe-creative-cloud.svg",
+          alt: "Creative Cloud",
+        },
+        {
+          src: "https://www.svgrepo.com/show/452149/adobe-photoshop.svg",
+          alt: "Adobe Photoshop",
+        },
+        {
+          src: "https://www.svgrepo.com/show/452147/adobe-illustrator.svg",
+          alt: "Adobe Illustrator",
+        },
+        {
+          src: "/logos/aftereffect.svg",
+          alt: "Adobe Aftereffect",
+        },
+        {
+          src: "https://www.svgrepo.com/show/452150/adobe-premiere.svg",
+          alt: "Premiere Pro",
+        },
+      ],
+      image: "/assets/branding-image.png",
+    },
+    {
+      title: "MarTech",
+      heading: "Marketing Technologies",
+      description:
+        "Helping businesses adapt to the digital age with modern solutions. From CRM integrations to digital workflows, we ensure efficient transformations.",
+      ctaButtons: [
+        {
+          head: "SEE HOW",
+          text: "Transformation Projects",
+          icon: "/assets/ecommerce/salesforce-commerce-cloud/features/feature4.svg",
+        },
+      ],
+      logos: [
+        {
+          src: "https://www.svgrepo.com/show/331433/hubspot.svg",
+          alt: "HubSpot",
+        },
+        {
+          src: "https://www.svgrepo.com/show/354306/salesforce.svg",
+          alt: "Salesforce",
+        },
+        {
+          src: "https://companieslogo.com/img/orig/SEMR-4f4c3210.png?t=1678085023",
+          alt: "Semrush",
+        },
+        {
+          src: "https://www.svgrepo.com/show/452053/mailchimp.svg",
+          alt: "Mailchimp",
+        },
+        {
+          src: "https://www.svgrepo.com/show/331574/sendgrid.svg",
+          alt: "Sendgrid",
+        },
+        {
+          src: "https://www.svgrepo.com/show/343561/hootsuite-communication-chat-interaction-connection-conversation.svg",
+          alt: "Hootsuite",
+        },
+        {
+          src: "https://www.svgrepo.com/show/353800/google-ads.svg",
+          alt: "Google Ads",
+        },
+        {
+          src: "https://www.svgrepo.com/show/303549/google-analytics-1-logo.svg",
+          alt: "Google Analytics",
+        },
+      ],
+      image: "/assets/transformation-image.png",
+    },
+  ],
 } as const;
