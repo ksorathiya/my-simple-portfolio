@@ -26,7 +26,7 @@ export default function Page() {
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
         <div className="mx-auto w-full space-y-8">
-          <div className="gap-2 flex justify-between">
+          <div className="gap-2 flex md:flex-row justify-between flex-col">
             <div className="flex-col flex flex-1 self-center space-y-1.5">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
@@ -80,7 +80,7 @@ export default function Page() {
         </div>
       </section>
       <section id="description">
-        <div className="z-10 flex min-h-[100dvh] items-center justify-center bg-white dark:bg-black">
+        <div className="z-10 flex min-h-[100dvh] items-center justify-center bg-background">
           <TextReveal text={DATA.description} />
         </div>
       </section>
@@ -261,11 +261,11 @@ export default function Page() {
           STORY SO FAR
         </div>
 
-        <ol className="relative border-s border-gray-200 dark:border-gray-700">
+        <ol className="relative border-s border-neutral-200 dark:border-neutral-700">
           {DATA.timeline.map((entry, index) => {
             return (
               <li key={index} className="mb-10 ms-4">
-                <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <div className="absolute w-3 h-3 bg-neutral-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-neutral-900 dark:bg-neutral-700"></div>
                 <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                   {entry.timestamp}
                 </time>
@@ -323,16 +323,16 @@ export default function Page() {
                 >
                   <div>
                     <div>
-                      <span className="bg-yellow border border-white/50 backdrop-blur-2xl rounded-full py-2 w-auto">
+                      <span className="bg-yellow backdrop-blur-2xl rounded-full py-2 w-auto">
                         <span className="center inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                           {section.title}
                         </span>
                       </span>
-                      <p className="text-4xl mt-8 lg:text-6xl font-extrabold tracking-tight text-black">
+                      <p className="text-4xl mt-8 lg:text-6xl font-extrabold tracking-tight">
                         {section.heading}
                       </p>
                     </div>
-                    <p className="text-lg text-slate-700 max-w-xl mt-8 lg:mx-auto">
+                    <p className="text-lg text-neutral-400 max-w-xl mt-8 lg:mx-auto">
                       {section.description}
                     </p>
                     {/* <div className="flex-col flex gap-3 mt-10 sm:flex-row">
