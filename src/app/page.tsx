@@ -18,6 +18,7 @@ import rehypeRaw from "rehype-raw";
 import Image from "next/image";
 import Lottie from "lottie-react";
 import rocket from "@/data/lotties/rocket.json";
+import { TimelineDemo } from "@/components/ui/timeline-demo";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -26,14 +27,23 @@ export default function Page() {
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
         <div className="mx-auto w-full space-y-8">
-          <div className="gap-2 flex md:flex-row justify-between flex-col">
-            <div className="flex-col flex flex-1 self-center space-y-1.5">
+          <div className="gap-2 flex flex-col md:flex-row justify-between">
+            <div className="flex-col flex flex-1 space-y-1.5 order-1 md:order-2">
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <img
+                  className="size-full"
+                  alt={DATA.name}
+                  src={DATA.avatarUrl}
+                />
+              </BlurFade>
+            </div>
+
+            <div className="flex-col flex flex-1 self-center space-y-1.5 order-2 md:order-1">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold inline-block tracking-tighter sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
                 text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
-                // animateByCharacter={true}
                 wavingHand={true}
               />
 
@@ -64,16 +74,6 @@ export default function Page() {
                 >
                   {DATA.location}
                 </Markdown>
-              </BlurFade>
-            </div>
-
-            <div className="flex-col flex flex-1 space-y-1.5">
-              <BlurFade delay={BLUR_FADE_DELAY}>
-                <img
-                  className="size-full"
-                  alt={DATA.name}
-                  src={DATA.avatarUrl}
-                />
               </BlurFade>
             </div>
           </div>
@@ -230,6 +230,7 @@ export default function Page() {
           </BlurFade>
         </div>
       </section> */}
+
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
@@ -261,49 +262,7 @@ export default function Page() {
           STORY SO FAR
         </div>
 
-        <ol className="relative border-s border-neutral-200 dark:border-neutral-700">
-          {DATA.timeline.map((entry, index) => {
-            return (
-              <li key={index} className="mb-10 ms-4">
-                <div className="absolute w-3 h-3 bg-neutral-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-neutral-900 dark:bg-neutral-700"></div>
-                <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                  {entry.timestamp}
-                </time>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                  <Markdown>{entry.title}</Markdown>
-                </h3>
-                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                  <Markdown>{entry.description}</Markdown>
-                </p>
-                {entry.link ? (
-                  <a
-                    href={entry.link}
-                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-                  >
-                    Learn more{" "}
-                    <svg
-                      className="w-3 h-3 ms-2 rtl:rotate-180"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 14 10"
-                    >
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M1 5h12m0 0L9 1m4 4L9 9"
-                      />
-                    </svg>
-                  </a>
-                ) : (
-                  ""
-                )}
-              </li>
-            );
-          })}
-        </ol>
+        <TimelineDemo />
       </section>
       <section id="rocket">
         <Lottie
