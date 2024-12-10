@@ -74,6 +74,7 @@ export default function RootLayout({
           </TooltipProvider>
         </ThemeProvider>
         <Analytics />
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="cee7ffad-15e0-402c-a714-758df97d7a0f"></script>
       </body>
     </html>
   );
