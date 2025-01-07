@@ -60,10 +60,10 @@ export default function Page() {
                   </Link>
                   <Link
                     target="_blank"
-                    href="https://docs.google.com/document/d/1T7Xl2qQHVSGoRYwqaGK23bnGhYISsMAO/edit?usp=sharing&ouid=113641347303871215868&rtpof=true&sd=true"
+                    href="https://docs.google.com/document/d/1t38pTf9FXfOjntppHz8qv7dnjfm5jn75/edit?usp=sharing&ouid=113641347303871215868&rtpof=true&sd=true"
                   >
                     <Button variant="link">
-                      Get my Resume{" "}
+                      Get My Resume{" "}
                       <ChevronRightIcon className="ml-1 size-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </Button>
                   </Link>
