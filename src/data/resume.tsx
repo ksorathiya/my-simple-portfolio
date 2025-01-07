@@ -12,7 +12,7 @@ export const DATA = {
   designation:
     "An architect of innovative and intuitive solutions, helping bring your vision to life at <a target='_blank' className='text-blue-900 dark:text-blue-500' href='https://solvative.com'>Solvative.</a>",
   summary:
-    "Hi, I'm **<Highlight>Kartik Sorathiya</Highlight>** — a **Technology Nerd** with around a **decade of experience** in building and leading technology solutions for businesses across diverse industries.<br/><br/>I specialize in **bring requirements to reality**, **system integrations**, and **digital transformations**, bringing a blend of **technical expertise**, **strategic planning**, and **team leadership** to every project. From architecting scalable backend systems to mentoring high-performing teams, I thrive on turning complex challenges into seamless solutions. When I’m not immersed in tech, you’ll find me **cooking**, **spending time with family and friends**, or catching up on **world affairs**.<br/><br/>---<br/><br/>### 💻 **Let’s build something extraordinary together!** ✨  <br/><br/> **Get in touch, and let’s talk life and tech!** 🚀",
+    "Hi, I'm **<Highlight>Kartik Sorathiya</Highlight>** — a **Technology Nerd** with around a **decade of experience** in building and leading technology solutions for businesses across diverse industries.<br/><br/>I specialize in **bringing requirements to reality**, **system integrations**, and **digital transformations**, bringing a blend of **technical expertise**, **strategic planning**, and **team leadership** to every project. From architecting scalable backend systems to mentoring high-performing teams, I thrive on turning complex challenges into seamless solutions. When I’m not immersed in tech, you’ll find me **cooking**, **spending time with family and friends**, or catching up on **world affairs**.<br/><br/>---<br/><br/>💻 **Let’s build something extraordinary together!** ✨  <br/><br/> **Get in touch, and let’s talk life and tech!** 🚀",
   avatarUrl: "/me.png",
   skills: {
     "Backend Development": [
@@ -166,7 +166,7 @@ export const DATA = {
       href: "https://atomic.finance",
       badges: [],
       location: "Remote",
-      title: "Practice Director - Digital Commerce Engineering",
+      title: "Director of Technology - Digital Commerce Engineering",
       logoUrl: "/solvative.png",
       start: "Oct 2016",
       end: "present",
